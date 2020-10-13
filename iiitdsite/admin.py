@@ -1,0 +1,37 @@
+from django.contrib import admin
+from .models import NewsPage, FacultyPageInfo, NewsLetterEmail, Events, images, AboutUsTestimonial
+from .models import OurFamilyLink, About, AcademicsCSE, AcademicsECE, Academics, ResearchPoints, ResearchStudents
+from .models import CurriculumLink, AcademicCalLink, HomePageUpcomingEvents, SenateChairperson, SenateMembers, BOGChairperson, BOGMembers, BOGNonMembers, Administration, FinanceCommitteeMembers, Staff
+from .models import ugcselinks, phdlinks, Scholarship, Alert, Jobs, HomePageGallery, Placements
+
+admin.site.register(NewsPage)
+admin.site.register(FacultyPageInfo)
+admin.site.register(NewsLetterEmail)
+admin.site.register(Events)
+admin.site.register(images)
+admin.site.register(About)
+admin.site.register(AboutUsTestimonial)
+admin.site.register(OurFamilyLink)
+admin.site.register(AcademicsCSE)
+admin.site.register(AcademicsECE)
+admin.site.register(Academics)
+admin.site.register(ResearchPoints)
+admin.site.register(ResearchStudents)
+admin.site.register(CurriculumLink)
+admin.site.register(AcademicCalLink)
+admin.site.register(HomePageUpcomingEvents)
+admin.site.register(SenateChairperson)
+admin.site.register(SenateMembers)
+admin.site.register(Staff)
+admin.site.register(Administration)
+admin.site.register(FinanceCommitteeMembers)
+admin.site.register(BOGChairperson)
+admin.site.register(BOGMembers)
+admin.site.register(BOGNonMembers)
+admin.site.register(ugcselinks)
+admin.site.register(phdlinks)
+admin.site.register(Scholarship)
+admin.site.register(Alert)
+admin.site.register(Jobs)
+admin.site.register(HomePageGallery)
+admin.site.register(Placements)

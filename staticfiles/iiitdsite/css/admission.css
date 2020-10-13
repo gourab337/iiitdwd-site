@@ -1,0 +1,62 @@
+.admissions{
+  margin: 50px 0;
+  text-align: center;
+}
+
+hr {
+  margin: 40px 150px;
+  border-top: 2px solid;
+}
+
+
+h2 {
+  color: white;
+  position: relative;
+  top: 100px;
+}
+.btn-text {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border-color: white;
+background-color: #ffcd3c;
+margin: 50px auto;
+
+}
+.btn-text:hover {
+  width: 253px;
+  height: 253px;
+  background-color: #393e46;
+}
+.btn2 {
+  background-color: #fa697c;
+}
+.btn3 {
+  background-color: #40a8c4;
+  text-align: center;
+}
+
+.faq {
+  text-align: left;
+  margin: 50px 150px;
+}
+h4 {
+  font-weight: bold;
+}
+
+/* For no scroll right */
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  /* height: 2000px; */
+  /* background: black; */
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+}

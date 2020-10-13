@@ -1,0 +1,38 @@
+#h{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.h1{
+    color:#090768;
+    font-size:24px;
+}
+.h2{
+    font-size: 18px;
+}
+.links{
+    border:0px solid ;
+    display: table-cell;
+    vertical-align: middle ;
+}
+#link{
+    color: white;
+    background-color:#090768;  
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right: 34px;
+    padding-left: 34px;
+    margin-left: 200px;
+}
+.link1{ 
+    margin-bottom: 10px;
+}
+@media screen and (max-width:640px){
+
+    #h{
+    margin-left: 18px;
+    margin-right: 18px;
+    }
+    #link{
+    margin-left: 12px;
+    }
+}

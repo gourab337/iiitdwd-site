@@ -1,0 +1,817 @@
+﻿<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <title>About</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+<!--         Bootstrap CSS-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="{% static 'iiitdsite/css/top_nav-scroll.css' %}" />
+    <link rel="stylesheet" href="{% static 'iiitdsite/css/about_us.css' %}" />
+    <link rel="stylesheet" href="{% static 'iiitdsite/css/footer.css' %}" />
+    <link rel="stylesheet" href="{% static 'iiitdsite/css/favicon_nav.css' %}" />
+
+    <!-- Fonts -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo&display=swap"
+      rel="stylesheet"
+    />
+
+<!--    <link-->
+<!--      rel="stylesheet"-->
+<!--      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
+<!--    />-->
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Top Nav -->
+    <nav
+      class="navbar navbar-expand-sm bg-dark justify-content-center"
+      id="backtonav"
+    >
+      <ul class="navbar-nav">
+        <div class="container">
+          <div class="row">
+            <section class="comsearch" style="margin-left: -3%">
+              <a href="#"
+                ><span style="font-size: 17px; color: #ffffff"
+                  >PMRF&nbsp;|&nbsp;
+                </span></a
+              >
+              <a href="#"
+                ><span style="font-size: 17px; color: white"
+                  >ARIIA&nbsp;|&nbsp;
+                </span></a
+              >
+              <a href="#"
+                ><span style="font-size: 17px; color: white"
+                  >RTI&nbsp;|&nbsp;
+                </span></a
+              >
+              <a href="#"
+                ><span style="font-size: 17px; color: white"
+                  >IIIT PPP Act&nbsp;|&nbsp;
+                </span></a
+              >
+              <a href="#"
+                ><span style="font-size: 17px; color: white"
+                  >AIMS&nbsp;|&nbsp;
+                </span></a
+              >
+              <a href="#"
+                ><span style="font-size: 17px; color: white"
+                  >Webmail&nbsp;|&nbsp;
+                </span></a
+              >
+              <a href="#"
+                ><span style="font-size: 17px; color: white">ICC</span></a
+              >
+            </section>
+
+            <section
+              class="information-wrapper"
+              id="navScrollBlock"
+              style="margin-top: 21px"
+            >
+              <div class="information d-none d-xl-block">
+                <div>
+                  <span><a href="{% url 'home' %}" style="color:rgb(255, 205, 131)">English
+                    </a></span>
+                </div>
+                <div>
+                  <span><a href="{% url 'kannada' %}" style="color:rgb(255, 205, 131)">ಕೆನಡಾ
+                  </a></span>
+                </div>
+                <div>
+                  <span><a href="{% url 'hindi' %}" style="color:rgb(255, 205, 131)">हिन्दी
+                  </a></span>
+                </div>
+              </div>
+            </section>
+
+            <div>
+              <div class="search" style="margin-left: -4%; margin-top: 10px">
+                <script
+                  async
+                  src="https://cse.google.com/cse.js?cx=483075f18c137fb12"
+                ></script>
+                <div class="gcse-search"></div>
+              </div>
+            </div>
+          </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </nav>
+    <!-- End Top Nav -->
+
+    <!-- Start Header Area -->
+    <header class="header-area">
+      <!-- main header start -->
+
+      <div class="main-header d-none d-lg-block">
+        <!-- header middle area start -->
+        <div class="header-main-area sticky">
+          <div class="container-fluid">
+            <div class="row align-items-center position-relative">
+              <!-- start logo area -->
+              <div class="col-lg-2">
+                <div class="logo">
+                  <a href="{% url 'home' %}">
+                    <img
+                      src="{% static 'iiitdsite/images/IIIT_Dharwad Main Logo.png' %}"
+                      alt="IIIT Dharwad"
+                    />
+                  </a>
+                </div>
+              </div>
+              <!-- start logo area -->
+
+              <!-- main menu area start -->
+              <div class="col-lg-10 position-static">
+                <div class="main-menu-area">
+                  <div class="main-menu">
+                    <!-- main menu navbar start -->
+                    <nav class="desktop-menu">
+                      <ul>
+                        <li class="static">
+                          <a href="{% url 'home' %}">Home </a>
+                        </li>
+                        <li class="active">
+                          <a href="{% url 'about' %}">About</a>
+                        </li>
+                        <li class="static">
+                          <a href="{% url 'academics' %}"
+                            >Academics <i class="fa fa-angle-down"></i
+                          ></a>
+                          <ul class="megamenu dropdown">
+                            <li
+                              class="mega-title"
+                              style="padding-left: 0px; margin-left: 0px;"
+                            >
+                              <a href="#">Courses</a>
+                              <ul>
+                                <li>
+                                  <a href="{% url 'academics-cse' %}">
+                                    Computer Science & Engineering (CSE)</a
+                                  >
+                                </li>
+                                <li>
+                                  <a href="{% url 'academics-ece' %}">
+                                    Electronics & Communication Engineering
+                                    (ECE)</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="mega-title">
+                              <a href="">Academic Information</a>
+                              <ul>
+                                <li><a href={{acad_link.acad_link}}>Academic Calendar</a></li>
+                                <li>
+                                  <a href="{% url 'faculty' %}">Faculty</a>
+                                </li>
+                                <li>
+                                  <a href="{% url 'research' %}">Research</a>
+                                </li>
+                              </ul>
+                            </li>
+
+                            <li class="mega-title">
+                              <img
+                                src="https://img.collegedekhocdn.com/media/img/institute/crawled_images/None/GDHGHGDDF.jpeg?tr=w-250,h-150"
+                                alt=""
+                              />
+                            </li>
+
+                            <li class="mega-title">
+                              <a href="#">Curriculum</a>
+                              <ul>
+                                <li>
+                                  <a href={{currilink.cse_link}}
+                                    >Computer Science & Engineering (CSE)</a
+                                  >
+                                </li>
+                                <li>
+                                  <a href={{currilink.ece_link}}
+                                    >Electronics & Communication Engineering
+                                    (ECE)</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="{% url 'admissions' %}"
+>Admissions <i class="fa fa-angle-down"></i
+                          ></a>
+                          <ul class="dropdown">
+                            <li>
+                              <a href="{% url 'ug' %}">
+                                Undergraduate (Ug)<i
+                                  class="fa fa-angle-right"
+                                ></i
+                              ></a>
+                              <ul class="dropdown">
+                                <li><a href={{links.fee_structure}}>Fee Structure</a></li>
+                                <li><a href={{links.admission_checklist}}> Admission Checklist</a></li>
+                                <li><a href={{links.course_seat_matrix}}> Course Seat Matrix</a></li>
+                                <li><a href={{links.academic_regulations}}> Academic Regulations</a></li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="{% url 'phd' %}"> Ph.D Programme </a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                >Financial Aid <i class="fa fa-angle-right"></i
+                              ></a>
+                              <ul class="dropdown">
+                                <li>
+                                  <a  href="{% url 'scholarships' %}">Scholarships & Bank Loans</a>
+                                </li>
+                                <li>
+                                  <a href={{links.sbi_collect}}>SBI Collect </a></li>
+                                  <li><a href={{links.instructions_for_sbi_collect}}>Instructions for SBI Collect</a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="#">
+                                Quick Links<i class="fa fa-angle-right"></i
+                              ></a>
+                              <ul class="dropdown">
+                                <li><a href={{links.jossa_link}}>JOSAA</a></li>
+                                <li><a href={{links.csab_link}}>CSAB</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li><a href="{% url 'events' %}">Events</a></li>
+                        <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                        <li><a href="{% url 'newstack' %}">News</a></li>
+                        <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                        <li><a href="{% url 'jobs' %}">Jobs</a></li>
+                        <!-- <li>
+                          <a href="#">AIMS <i class="fa fa-user"></i></a>
+                        </li> -->
+                      </ul>
+                    </nav>
+                    <!-- main menu navbar end -->
+                  </div>
+                </div>
+              </div>
+              <!-- main menu area end -->
+
+              <!-- mini cart area start -->
+              <!-- <div class="col-lg-2"></div> -->
+              <!-- mini cart area end -->
+            </div>
+          </div>
+        </div>
+        <!-- header middle area end -->
+      </div>
+      <!-- main header start -->
+
+      <!-- mobile header start -->
+      <div class="mobile-header d-lg-none d-md-block sticky">
+        <!--mobile header top start -->
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <div class="mobile-main-header">
+                <div class="mobile-logo">
+                  <a href="{% url 'home' %}">
+                    <img
+                      src="{% static 'iiitdsite/images/IIIT_Dharwad Main Logo.png' %}"
+                      alt="IIIT Dharwad"
+                    />
+                    <!--mobile menu logo-->
+                  </a>
+                </div>
+                <div class="mobile-menu-toggler">
+                  <div class="mobile-menu-btn">
+                    <div class="off-canvas-btn">
+                      <ion-icon name="grid"></ion-icon>
+                      <!--menu icon for mobile menu-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- mobile header top start -->
+      </div>
+      <!-- mobile header end -->
+    </header>
+    <!-- end Header Area -->
+
+    <!-- off-canvas menu start -->
+    <aside class="off-canvas-wrapper">
+      <div class="off-canvas-overlay"></div>
+      <div class="off-canvas-inner-content">
+        <div class="btn-close-off-canvas">
+          <i class="fa fa-times"></i>
+        </div>
+
+        <div class="off-canvas-inner">
+          <!-- search box start -->
+          <div class="search-mobile">
+            <script async src="https://cse.google.com/cse.js?cx=483075f18c137fb12"></script>
+<div class="gcse-search"></div>
+          </div>
+          <!-- search box end -->
+
+          <!-- mobile menu start -->
+          <div class="mobile-navigation">
+            <!-- mobile menu navigation start -->
+            <nav>
+              <ul
+                class="mobile-menu"
+                style="padding-bottom: 0px; margin-bottom: 0px;"
+              >
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li class="menu-item-has-children">
+                  <a href="{% url 'academics' %}">Academics</a>
+                  <ul class="dropdown">
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="{% url 'faculty' %}">Faculty</a></li>
+                    <li><a href="{% url 'research' %}">Research</a></li>
+                    <li class="menu-item-has-children"><a href="">Curriculum</a>
+                    <ul class="dropdown">
+                      <li><a href="{{currilink.cse_link}}">CSE</a></li>
+                      <li><a href={{currilink.cse_link}}>ECE</a></li>
+                  </ul>
+                </li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="{% url 'admissions' %}">Admissions</a>
+                  <ul class="dropdown">
+                    <li><a href="{% url 'ug' %}">Undergraduate</a></li>
+                    <li><a href="{% url 'phd' %}">Ph.D</a></li>
+                    <li><a href="#">Finance+Aid</a></li>
+                  </ul>
+                </li>
+                <li><a href="{% url 'events' %}">Events</a></li>
+                <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                <li><a href="{% url 'newstack' %}">News</a></li>
+                <li><a href="{% url 'contact' %}">Contact us</a></li>
+                <li><a href="{% url 'jobs' %}">Jobs</a></li>
+                <!-- <li><a href="./aims.html">AIMS</a></li> -->
+              </ul>
+            </nav>
+            <!-- mobile menu navigation end -->
+          </div>
+          <!-- mobile menu end -->
+
+          <!-- offcanvas widget area start -->
+          <div class="offcanvas-widget-area">
+            <div class="off-canvas-contact-widget">
+              <ul>
+                <li>
+                  <i class="fa fa-mobile"></i>
+                  <a href="#">0123456789</a>
+                </li>
+                <li>
+                  <i class="fa fa-envelope-o"></i>
+                  <a href="#">info@yourdomain.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="off-canvas-social-widget">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-google"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+              <a href="#"><i class="fa fa-youtube-play"></i></a>
+            </div>
+          </div>
+          <!-- offcanvas widget area end -->
+        </div>
+      </div>
+    </aside>
+    <!-- off-canvas menu end -->
+
+    <!-- Page starts -->
+    {% for about in about %}
+    <h1 class="text-center" style="font-size: 30px">About Us</h1>
+    <div class="row mx-1">
+      <div class="col-lg-12 col-md-12 col-sm-12" id="aboutiiit">
+        <h3 style="text-decoration: underline" id="one">About IIIT Dharwad</h3>
+        <p class="about_font">
+          The Institute commenced its academic session from August 2015. The           Institute is currently operating out of its transit campus housed in           the IT Park in Hubballi with well-equipped classrooms, laboratories           and a library.IIIT Dharwad is keen to develop its permanent campus in           a plot of 61 acres allotted by the Government of Karnataka at           Tadasinakoppa village between Hubballi and Dharwad cities. As a           not-for-profit institute of higher learning in the area of Information           Technology (IT), the primary objective of IIIT Dharwad is to address           the skill gap in high-end information technology and thereby enable           India to retain its global leadership role in IT and allied areas. To           achieve this objective, IIIT Dharwad currently offers B.Tech. Degree           programmes in Computer Science and Electronics & Communication.
+        </p>
+      </div>
+    </div>
+    <div class="media mt-3">
+      <img
+        src="{% static 'iiitdsite/images/sudhamurty.jpg' %}"
+        class="align-self-top ml-1"
+        id="images"
+      />
+      <div class="media-body ml-2">
+        <h4 class="chairperson" id="two">Chairperson's message</h4>
+        <hr class="w-100 mx-0 my-0 py-0.5 btn-dark" />
+        <p class="chairperson">
+          “As the Chairperson of the Board of Governors of IIIT Dharwad, I would           like to share a slice of wisdom with the young generation around us:           Vision without action is merely a dream; action without vision is           merely passing time; but vision and action together can change the           world. We can give our children only two things in life which are           essential – strong roots and powerful wings. Afterwards, they may fly           anywhere and live independently; of all the luxuries in life, the           greatest one is getting freedom of the right kind. To come up in life,           the young generation requires talent, hard work, drive, and ability to           communicate genuinely with people. With my experience in life, I feel           that having good relationships, compassion, and peace of mind is much           more important than achievements, awards, degrees, or money. Hence, we           should always have a definite aim in life which we must try to achieve           while being of help to others. I wish IIIT Dharwad great success in           shaping young minds into professionals with the best of skills coupled           with the highest of values.”
+        </p>
+      </div>
+    </div>
+
+    <div class="media mt-3">
+      <div class="media-body mr-2">
+        <h4 class="chairperson text-right" id="three">Director's message</h4>
+        <hr class="w-100 mx-0 my-0 py-0.5 btn-dark" />
+        <p class="chairperson">
+          "One of the key strengths of this young Institute is its highly           qualified and committed faculty with expertise in a wide range of           areas of information technology and with PhDs and research as well as           industry experience from reputed institutes in India and abroad. As a           young institute, IIIT Dharwad has a unique opportunity to make a           difference not only to Indian IT industry and the academic research           community, but also the people of the entire region of North           Karnataka. The twin cities of Hubballi and Dharwad are already a           recognized centre for educational institutes of repute including           engineering, medical, law and other colleges, universities and an           Indian Institute of Technology. With this environment and rapidly           improving connectivity to the IT capital Bengaluru, IIIT Dharwad is           strategically positioned to develop into one of the best institutes of           national importance. I consider it my duty and privilege to place on           record the guidance, direction and support provided by the Board of           Governors. I also thank the faculty and staff for their continued           energy, enthusiasm and efforts in providing state of the art education           to our students for their overall growth. In conclusion, I deem it our           privilege to work in this fledgling institution."
+        </p>
+      </div>
+      <img
+        src="{% static 'iiitdsite/images/faculty/director.jpeg' %}"
+        class="align-self-top ml-1"
+        id="images"
+      />
+    </div>
+    {% endfor %}
+    <div class="jumbotron jumbotron-fluid pt-0 pb-0 mt-1 text-center">
+      <a
+        data-toggle="collapse"
+        data-target="#ourfamily"
+        class="btn-outline-warning mx-2"
+        id="family"
+      >
+        <i
+          class="fa fa-angle-double-right"
+          style="cursor: pointer"
+          aria-hidden="true"
+          >OUR FAMILY</i
+        ></a
+      >
+      <div id="ourfamily" class="collapse">
+        <div class="row mx-1" style="cursor: pointer">
+          {% for fam in ourfam %}
+          <div
+            class="col-lg-4 col-md-6 col-sm-6 col-12 text-center btn-outline-danger"
+            id="box"
+          >
+            <a href="/{{fam.link}}">{{fam.name}}</a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <div class="gtco-testimonials">
+      <h2 id="h2">Testimonials</h2>
+      <div class="owl-carousel owl-carousel1 owl-theme">
+        {% for testi in testi %}
+        <div>
+          <div class="card text-center">
+            <img
+              class="card-img-top"
+              src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300"
+              alt=""
+            />
+            <div class="card-body">
+              <h5>
+                {{testi.name}} <br />
+                <span> {{testi.position}} </span>
+              </h5>
+              <p class="card-text">
+                {{testi.description}}
+              </p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-3 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fa fa-map-marker" id="icons"></i>
+                <div class="cta-text">
+                  <h4>Find us</h4>
+                  <span
+                    >3rd floor IT Park,<br />
+                    Opp: Glass House, <br />
+                    Hubballi- 580029.</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fa fa-phone" id="icons"></i>
+                <div class="cta-text">
+                  <h4>Call us</h4>
+                  <span>1234567890</span>
+                </div>
+              </div>
+            </div>
+            <div class="weather col-xl-3 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fa fa-cloud" id="icons"></i>
+                <div class="weather cta-text">
+                  <h4>{{temp_cel}}°C/ {{temp_fah}}°F</h4>
+                  <span>Dharwad</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 mb-30">
+              <div class="single-cta">
+                <i class="fa fa-envelope-open" id="icons"></i>
+                <div class="cta-text">
+                  <h4>Mail us</h4>
+                  <span>contact@iiitdwd.ac.in</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-3 col-lg-3 mb-50">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a href="{% url 'home' %}"
+                    ><img
+                      src="{% static 'iiitdsite/images/IIIT_Dharwad Main Logo.png' %}"
+                      class="img-fluid"
+                      alt="logo"
+                  /></a>
+                </div>
+                <div class="footer-text">
+<!--                  <p>-->
+<!--                    Lorem ipsum dolor sit amet, consec tetur adipisicing elit,-->
+<!--                    sed do eiusmod tempor incididuntut consec tetur adipisicing-->
+<!--                    elit,Lorem ipsum dolor sit amet.-->
+<!--                  </p>-->
+                </div>
+                <div class="footer-social-icon">
+                  <span>Follow us</span>
+                  <a href="#"><i class="fa fa-facebook-f facebook-bg"></i></a>
+                  <a href="#"><i class="fa fa-twitter twitter-bg"></i></a>
+                  <a href="#"><i class="fa fa-google-plus google-bg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Clubs</h3>
+                </div>
+                <ul>
+                  <li><a href="#">E-Cell</a></li>
+                  <li><a href="#">Robotics</a></li>
+                  <li><a href="#">return_0</a></li>
+                  <li><a href="#">Synapse</a></li>
+                </ul>
+                <div class="footer-widget-heading">
+                  <div class="footer-widget-heading">
+                    <h3>Useful Links</h3>
+                  </div>
+                  <ul>
+                    <li><a href="{% url 'placements' %}">Placement Cell</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Other Clubs</h3>
+              </div>
+              <ul>
+                <li>Cultural Committe</li>
+                <li>Music Club</li>
+                <li>Literature Club</li>
+                <li>Photography Club</li>
+              </ul>
+            </div>
+          </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 mb-50">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Subscribe</h3>
+                </div>
+                <div class="footer-text mb-25">
+                  <p>
+                    Don’t miss the IIIT Dharwad news letter, kindly fill the form
+                    below to get updated.
+                  </p>
+                </div>
+                <div class="subscribe-form">
+                  <form action="#">
+                    <input type="text" placeholder="Email Address" id="email"/>
+                    <button><i class="fa fa-paper-plane"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+              <div class="copyright-text">
+                <p>
+                  Copyright &copy; 2020, All Right Reserved
+                  <a href="#">IIIT Dharwad</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+              <div class="footer-menu">
+                <ul>
+                  <li><a href="{% url 'home' %}">Home</a></li>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Tenders</a></li>
+                  <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      (function () {
+        "use strict";
+
+        var carousels = function () {
+          $(".owl-carousel1").owlCarousel({
+            loop: true,
+            center: true,
+            margin: 0,
+            responsiveClass: true,
+            nav: false,
+            responsive: {
+              0: {
+                items: 1,
+                nav: false,
+              },
+              680: {
+                items: 2,
+                nav: false,
+                loop: false,
+              },
+              1000: {
+                items: 3,
+                nav: true,
+              },
+            },
+          });
+        };
+
+        (function ($) {
+          carousels();
+        })(jQuery);
+      })();
+    </script>
+
+    <script>
+      (function ($) {
+        "use strict";
+
+        // Off Canvas Open close start
+        $(".off-canvas-btn").on("click", function () {
+          $("body").addClass("fix");
+          $(".off-canvas-wrapper").addClass("open");
+        });
+
+        $(".btn-close-off-canvas,.off-canvas-overlay").on("click", function () {
+          $("body").removeClass("fix");
+          $(".off-canvas-wrapper").removeClass("open");
+        });
+
+        // slide effect dropdown
+        function dropdownAnimation() {
+          $(".dropdown").on("show.bs.dropdown", function (e) {
+            $(this)
+              .find(".dropdown-menu")
+              .first()
+              .stop(true, true)
+              .slideDown(500);
+          });
+
+          $(".dropdown").on("hide.bs.dropdown", function (e) {
+            $(this)
+              .find(".dropdown-menu")
+              .first()
+              .stop(true, true)
+              .slideUp(500);
+          });
+        }
+        dropdownAnimation();
+
+        //offcanvas mobile menu start
+        var $offCanvasNav = $(".mobile-menu"),
+          $offCanvasNavSubMenu = $offCanvasNav.find(".dropdown");
+
+        /Add Toggle Button With Off Canvas Sub Menu/;
+        $offCanvasNavSubMenu
+          .parent()
+          .prepend('<span class="menu-expand"><i></i></span>');
+
+        /Close Off Canvas Sub Menu/;
+        $offCanvasNavSubMenu.slideUp();
+
+        /Category Sub Menu Toggle/;
+        $offCanvasNav.on("click", "li a, li .menu-expand", function (e) {
+          var $this = $(this);
+          if (
+            $this
+              .parent()
+              .attr("class")
+              .match(
+                /\b(menu-item-has-children|has-children|has-sub-menu)\b/
+              ) &&
+            ($this.attr("href") === "#" || $this.hasClass("menu-expand"))
+          ) {
+            e.preventDefault();
+            if ($this.siblings("ul:visible").length) {
+              $this.parent("li").removeClass("active");
+              $this.siblings("ul").slideUp();
+            } else {
+              $this.parent("li").addClass("active");
+              $this
+                .closest("li")
+                .siblings("li")
+                .removeClass("active")
+                .find("li")
+                .removeClass("active");
+              $this.closest("li").siblings("li").find("ul:visible").slideUp();
+              $this.siblings("ul").slideDown();
+            }
+          }
+        });
+
+        // tooltip active js
+        $('[data-toggle="tooltip"]').tooltip();
+      })(jQuery);
+    </script>
+    <!--ion icon cdn-->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  </body>
+</html>
