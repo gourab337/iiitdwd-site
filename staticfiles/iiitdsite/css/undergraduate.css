@@ -1,0 +1,163 @@
+.home{
+    align-items: center;
+}
+#service{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:640px){
+    #service{
+    display: table-cell;
+    vertical-align: middle ;
+    }
+}
+
+.gap{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#branch{
+    border:0px solid ;
+    font-size: 18px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color:#01010B;
+}
+.branch1{
+    padding-top:24px;
+    padding-bottom:24px;
+    padding-right: 45px;
+    padding-left: 45px;
+    margin-right:20px;
+}
+.branch2{
+    padding-top:24px;
+    padding-bottom:24px;
+    padding-right: 34px;
+    padding-left: 34px;
+}
+@media screen and (max-width:640px){
+    .gap{
+    display: table-cell;
+    vertical-align: middle ;
+    }
+    .branch1{
+        margin-bottom:30px;
+        margin-left:15px;
+        margin-right:0px;
+        padding-top:20px;
+        padding-bottom:20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        font-size: 16px;
+    }
+    .branch2{
+        margin-left:15px;
+        padding-top:20px;
+        padding-bottom:20px;
+        padding-right: 14px;
+        padding-left: 14px;
+        font-size: 16px;
+    }
+}
+
+
+.box{
+    border:2px solid ;
+    padding:34px;
+    margin:10px;
+    /* z-index: -3; */
+    background-color:#01010B;
+    height:380px;
+    width:360px;
+    text-align: center;
+    border-radius: 5%;
+}
+
+#service.box.p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.h-secondary{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:1.5rem;
+    color:white;
+    cursor: pointer;
+    z-index: 3;
+}
+#a{
+    display: block;
+    width:100%;
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #01010B;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 1%;
+    
+}
+.modes{
+    background-color: red;
+}
+
+.h-secondary{
+    text-align: center;
+    font-family: 'Varta', sans-serif;
+}
+
+
+.back{
+    padding-bottom: 30px;
+}
+.home1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 45px;
+    z-index: 1;
+    padding-top: 45px;
+    font-family: 'Varta', sans-serif;
+}
+.home2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+.students{
+    background-color: red;
+}
+.fee{
+    background-color:#1BA308;
+    align-items: center;
+}
+.modes:hover{
+    background-color: #DD4027;
+}
+.fee:hover{
+    background-color: #77CA1F;
+}
+.students:hover{
+    background-color: #DD4027;
+}
+
+
+
+/* Scrolling Effect */
+
+[data-aos] {
+  visibility: hidden;
+}
+[data-aos].box{
+  visibility: visible;
+}
+

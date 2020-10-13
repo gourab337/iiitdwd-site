@@ -1,0 +1,41 @@
+body {
+  padding: 7% 7%;
+  color: #0f4c68;
+  line-height: 1.5;
+}
+h1 {
+    display: inline-block;
+}
+p {
+  color: black;
+}
+.lap {
+  font-size: 3rem;
+  margin: 5px 15px;
+
+}
+hr {
+  margin: 50px 0;
+}
+.line {
+  margin: 70px auto;
+  background-color: white;
+  border-color: grey;
+  border-style: none;
+  border-width: 5px;
+  border-top-style: dotted;
+  width: 5%;
+}
+.button-logo {
+  margin-bottom: 40px;
+  font-size: 5rem;
+  color: #0f4c68;
+}
+.info {
+  margin: 5px auto;
+  text-align: center;
+}
+.info-card {
+  border: 0;
+  margin: 0 auto;
+}

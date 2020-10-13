@@ -1,0 +1,41 @@
+.at-section__title {
+  margin: 0 0 70px;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 2.625rem;
+  text-align: center;
+}
+
+.containerBody {
+  margin-right: 100px;
+  margin-left: 100px;
+  /* margin-top: -60px; */
+}
+
+@media screen and (max-width: 800px) {
+  .at-section__title {
+    font-size: 2.7rem;
+    font-weight: 200;
+  }
+}
+@media screen and (max-width: 600px) {
+  .at-section__title {
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+}
+
+.containerFaculty {
+  /* max-width: 1170px; */
+  /* width: 100%; */
+  margin: 100px auto;
+  padding: 0 0px;
+  box-sizing: border-box;
+  /* -webkit-transform-origin: top center; */
+  /* transform-origin: top center; */
+  /* -webkit-transform: scale(0.8); */
+  transform: scale(0.8);
+}
+

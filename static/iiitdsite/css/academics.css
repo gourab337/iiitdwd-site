@@ -1,0 +1,189 @@
+.heading{
+    text-align: center;
+    margin-top: 24px;
+    color: #333;
+    font-family: 'Roboto Slab', serif;
+}
+.sub-heading{
+    text-align: center;
+    margin-top: 45px;
+    font-size: 22px;
+    padding-right: 20px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+.link1{
+    padding-left: 45px;
+}
+.link2{
+    padding-left:180px;
+}
+.images{
+    display: flex;
+    margin-left: 180px;
+    margin-top: 20px;
+}
+.one{
+    border: 15px solid white ;
+    overflow: hidden;
+    background-size: cover;
+    width:600px;
+    height: 400px;
+}
+.two{
+    border: 15px solid white ;
+    overflow: hidden;
+    background-size: cover;
+    width: 600px;
+    height: 400px;
+}
+.second-heading{
+    text-align: center;
+    margin-top: 45px;
+    color: #333;
+    font-family: 'Arvo', serif;
+}
+.redirect{
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 36px;
+    font-size:18px;
+    font-family: 'Poppins', sans-serif;
+}
+.l1{
+    border: 1px solid blue;
+    padding-left:90px ;
+    padding-right: 90px;
+    padding-top:13px ;
+    padding-bottom:13px ;
+    margin-right: 9px;
+    color: white;
+    background-color: #00004d;
+}
+.l2{
+    border: 1px solid blue;
+    padding-left: 133px;
+    padding-right:133px ;
+    padding-top: 13px;
+    padding-bottom:13px ;
+    margin-right: 9px;
+    color: white;
+    background-color: #00004d;
+}
+.l3{
+    border: 1px solid blue;
+    padding-left: 125px;
+    padding-right: 125px;
+    padding-top:13px ;
+    padding-bottom:13px;
+    color: white;
+    background-color: #00004d;
+}
+
+@media screen and (min-width:640px){
+    .extra{
+        display: none;
+    }
+    .extra2{
+        display: none;
+    }
+    .e{
+        display: none;
+    }
+}
+
+@media screen and (max-width:640px){
+    .heading{
+    margin-top: 34px;
+    font-size: 30px;
+    }
+    .sub-heading{
+        font-size:22px;
+    }
+    .images{
+        display: block;
+        width:220px;
+        margin-left: 10px;
+    }
+    .one{
+    padding-right:0px;
+    }
+    .link1{
+    padding-left: 0px;
+    }
+    .link2{
+        display: none;
+    }
+    .e{
+    text-align: center;
+    margin-left: 80px;
+    }
+    .extra{
+        color: #00004d;
+        font-family: 'Playfair Display', serif;
+        font-size: 22px;
+    }
+    .second-heading{
+        font-size: 30px;
+    }
+    .l1,.l2,.l3{
+    display: none;
+    }
+    .extra2{
+        text-align: center;
+    }
+    .a1{
+    border: 1px solid blue;
+    padding-left:90px ;
+    padding-right: 90px;
+    padding-top:13px ;
+    padding-bottom:13px ;
+    color: white;
+    background-color: #00004d;
+    }
+    .a2{
+    border: 1px solid blue;
+    padding-left: 133px;
+    padding-right:133px ;
+    padding-top: 13px;
+    padding-bottom:13px ;
+    color: white;
+    background-color: #00004d;
+    }
+    .a3{
+    border: 1px solid blue;
+    padding-left: 125px;
+    padding-right: 125px;
+    padding-top:13px ;
+    padding-bottom:13px;
+    color: white;
+    background-color: #00004d;
+    }
+    .one{
+        border:none;
+    }
+    .two{
+        border:none;
+    }
+}
+
+
+
+/* Zooming Effect On Images */
+
+.one img {
+    transition: transform .5s ease;
+}
+.one:hover img {
+    transform: scale(1.2);
+}
+
+.two img {
+    transition: transform .5s ease;
+}
+.two:hover img {
+    transform: scale(1.2);
+}
+img:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <title>FAQ</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="{% static 'iiitdsite/css/FAQ.css' %}" />
+  <link rel="stylesheet" href="{% static 'iiitdsite/css/footer.css' %}" />
+  <link rel="stylesheet" href="{% static 'iiitdsite/css/favicon_nav.css' %}" />
+  <link rel="stylesheet" href="{% static 'iiitdsite/css/top_nav-scroll.css' %}">
+</head>
+
+<body>
+  <!-- Top Nav -->
+  <nav class="navbar navbar-expand-sm bg-dark justify-content-center" id="backtonav">
+    <ul class="navbar-nav">
+      <div class="container">
+        <div class="row">
+          <section class="comsearch" style="margin-left: -3%">
+            <a href="#"><span style="font-size: 17px; color: #ffffff">PMRF&nbsp;|&nbsp;
+              </span></a>
+            <a href="#"><span style="font-size: 17px; color: white">ARIIA&nbsp;|&nbsp;
+              </span></a>
+            <a href="#"><span style="font-size: 17px; color: white">RTI&nbsp;|&nbsp;
+              </span></a>
+            <a href="#"><span style="font-size: 17px; color: white">IIIT PPP Act&nbsp;|&nbsp;
+              </span></a>
+            <a href="#"><span style="font-size: 17px; color: white">AIMS&nbsp;|&nbsp;
+              </span></a>
+            <a href="#"><span style="font-size: 17px; color: white">Webmail&nbsp;|&nbsp;
+              </span></a>
+            <a href="#"><span style="font-size: 17px; color: white">ICC</span></a>
+          </section>
+
+          <section class="information-wrapper" id="navScrollBlock" style="margin-top: 21px">
+            <div class="information d-none d-xl-block">
+              <div>
+                <span><a href="{% url 'home' %}" style="color:rgb(255, 205, 131)">English
+                  </a></span>
+              </div>
+              <div>
+                <span><a href="{% url 'kannada' %}" style="color:rgb(255, 205, 131)">ಕೆನಡಾ
+                  </a></span>
+              </div>
+              <div>
+                <span><a href="{% url 'hindi' %}" style="color:rgb(255, 205, 131)">हिन्दी
+                  </a></span>
+              </div>
+            </div>
+          </section>
+
+          <div>
+            <div class="search" style="margin-left: -4%; margin-top: 10px">
+              <script async src="https://cse.google.com/cse.js?cx=483075f18c137fb12"></script>
+              <div class="gcse-search"></div>
+            </div>
+          </div>
+        </div>
+        </section>
+      </div>
+      </div>
+      </div>
+    </ul>
+  </nav>
+  <!-- End Top Nav -->
+
+  <!-- Start Header Area -->
+  <header class="header-area">
+    <!-- main header start -->
+
+    <div class="main-header d-none d-lg-block">
+      <!-- header middle area start -->
+      <div class="header-main-area sticky">
+        <div class="container-fluid">
+          <div class="row align-items-center position-relative">
+            <!-- start logo area -->
+            <div class="col-lg-2">
+              <div class="logo">
+                <a href="{% url 'kannada' %}">
+                  <img src="{% static 'iiitdsite/images/IIIT_Dharwad Main Logo.png' %}" alt="IIIT Dharwad" />
+                </a>
+              </div>
+            </div>
+            <!-- start logo area -->
+
+            <!-- main menu area start -->
+            <div class="col-lg-10 position-static">
+              <div class="main-menu-area">
+                <div class="main-menu">
+                  <!-- main menu navbar start -->
+                  <nav class="desktop-menu">
+                    <ul>
+                      <li class="static">
+                        <a href="{% url 'kannada' %}">Home </a>
+                      </li>
+                      <li class="static">
+                        <a href="{% url 'about-kannada' %}">About</a>
+                      </li>
+                      <li class="static">
+                        <a href="{% url 'academics-kannada' %}">Academics <i class="fa fa-angle-down"></i></a>
+                        <ul class="megamenu dropdown">
+                          <li class="mega-title" style="padding-left: 0px; margin-left: 0px;">
+                            <a href="#">Courses</a>
+                            <ul>
+                              <li>
+                                <a href="{% url 'academics-cse-kannada' %}">
+                                  Computer Science & Engineering (CSE)</a>
+                              </li>
+                              <li>
+                                <a href="{% url 'academics-ece-kannada' %}">
+                                  Electronics & Communication Engineering
+                                  (ECE)</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="mega-title">
+                            <a href="">Academic Information</a>
+                            <ul>
+                              <li><a href={{acad_link.acad_link}}>Academic Calendar</a></li>
+                              <li>
+                                <a href="{% url 'faculty-kannada' %}">Faculty</a>
+                              </li>
+                              <li>
+                                <a href="{% url 'research-kannada' %}">Research</a>
+                              </li>
+                            </ul>
+                          </li>
+
+                          <li class="mega-title">
+                            <img
+                              src="https://img.collegedekhocdn.com/media/img/institute/crawled_images/None/GDHGHGDDF.jpeg?tr=w-250,h-150"
+                              alt="" />
+                          </li>
+
+                          <li class="mega-title">
+                            <a href="#">Curriculum</a>
+                            <ul>
+                              <li>
+                                <a href={{currilink.cse_link}}>Computer Science & Engineering (CSE)</a>
+                              </li>
+                              <li>
+                                <a href={{currilink.ece_link}}>Electronics & Communication Engineering
+                                  (ECE)</a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="{% url 'admissions-kannada' %}">Admissions <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown">
+                          <li>
+                            <a href="{% url 'ug-kannada' %}">
+                              Undergraduate (Ug)<i class="fa fa-angle-right"></i></a>
+                            <ul class="dropdown">
+                              <li><a href={{links.fee_structure}}>Fee Structure</a></li>
+                              <li><a href={{links.admission_checklist}}> Admission Checklist</a></li>
+                              <li><a href={{links.course_seat_matrix}}> Course Seat Matrix</a></li>
+                              <li><a href={{links.academic_regulations}}> Academic Regulations</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="{% url 'phd-kannada' %}"> Ph.D Programme </a>
+                          </li>
+                          <li>
+                            <a href="#">Financial Aid <i class="fa fa-angle-right"></i></a>
+                            <ul class="dropdown">
+                              <li>
+                                <a href="{% url 'scholarships-kannada' %}">Scholarships & Bank Loans</a>
+                              </li>
+                              <li>
+                              <li><a href={{links.sbi_collect}}>SBI Collect </a></li>
+                              <li><a href={{links.instructions_for_sbi_collect}}>Instructions for SBI Collect</a></li>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">
+                          Quick Links<i class="fa fa-angle-right"></i></a>
+                        <ul class="dropdown">
+                          <li><a href={{links.jossa_link}}>JOSAA</a></li>
+                          <li><a href={{links.csab_link}}>CSAB</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    </li>
+                    <li><a href="{% url 'events-kannada' %}">Events</a></li>
+                    <li><a href="{% url 'gallery-kannada' %}">Gallery</a></li>
+                    <li><a href="{% url 'newstack-kannada' %}">News</a></li>
+                    <li><a href="{% url 'contact-kannada' %}">Contact Us</a></li>
+                    <li><a href="{% url 'jobs-kannada' %}">Jobs</a></li>
+                    <!-- <li>
+                              <a href="#">AIMS <i class="fa fa-user"></i></a>
+                            </li> -->
+                    </ul>
+                  </nav>
+                  <!-- main menu navbar end -->
+                </div>
+              </div>
+            </div>
+            <!-- main menu area end -->
+
+            <!-- mini cart area start -->
+            <!-- <div class="col-lg-2"></div> -->
+            <!-- mini cart area end -->
+          </div>
+        </div>
+      </div>
+      <!-- header middle area end -->
+    </div>
+    <!-- main header start -->
+
+    <!-- mobile header start -->
+    <div class="mobile-header d-lg-none d-md-block sticky">
+      <!--mobile header top start -->
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12">
+            <div class="mobile-main-header">
+              <div class="mobile-logo">
+                <a href="{% url 'kannada' %}">
+                  <img src="{% static 'iiitdsite/images/IIIT_Dharwad Main Logo.png' %}" alt="IIIT Dharwad" />
+                  <!--mobile menu logo-->
+                </a>
+              </div>
+              <div class="mobile-menu-toggler">
+                <div class="mobile-menu-btn">
+                  <div class="off-canvas-btn">
+                    <ion-icon name="grid"></ion-icon>
+                    <!--menu icon for mobile menu-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- mobile header top start -->
+    </div>
+    <!-- mobile header end -->
+  </header>
+  <!-- end Header Area -->
+
+  <!-- off-canvas menu start -->
+  <aside class="off-canvas-wrapper">
+    <div class="off-canvas-overlay"></div>
+    <div class="off-canvas-inner-content">
+      <div class="btn-close-off-canvas">
+        <i class="fa fa-times"></i>
+      </div>
+
+      <div class="off-canvas-inner">
+        <!-- search box start -->
+        <div class="search-mobile">
+          <script async src="https://cse.google.com/cse.js?cx=483075f18c137fb12"></script>
+          <div class="gcse-search"></div>
+        </div>
+        <!-- search box end -->
+
+        <!-- mobile menu start -->
+        <div class="mobile-navigation">
+          <!-- mobile menu navigation start -->
+          <nav>
+            <ul class="mobile-menu" style="padding-bottom: 0px; margin-bottom: 0px;">
+              <li><a href="{% url 'kannada' %}">Home</a></li>
+              <li><a href="{% url 'about-kannada' %}">About</a></li>
+              <li class="menu-item-has-children">
+                <a href="{% url 'academics-kannada' %}">Academics</a>
+                <ul class="dropdown">
+                  <li><a href="#">Courses</a></li>
+                  <li><a href="{% url 'faculty-kannada' %}">Faculty</a></li>
+                  <li><a href="{% url 'research-kannada' %}">Research</a></li>
+                  <li class="menu-item-has-children"><a href="">Curriculum</a>
+                    <ul class="dropdown">
+                      <li><a href="{{currilink.cse_link}}">CSE</a></li>
+                      <li><a href={{currilink.cse_link}}>ECE</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="{% url 'admissions-kannada' %}">Admissions</a>
+                <ul class="dropdown">
+                  <li><a href="{% url 'ug-kannada' %}">Undergraduate</a></li>
+                  <li><a href="{% url 'phd-kannada' %}">Ph.D</a></li>
+                  <li><a href="#">Finance+Aid</a></li>
+                </ul>
+              </li>
+              <li><a href="{% url 'events-kannada' %}">Events</a></li>
+              <li><a href="{% url 'gallery-kannada' %}">Gallery</a></li>
+              <li><a href="{% url 'newstack-kannada' %}">News</a></li>
+              <li><a href="{% url 'contact-kannada' %}">Contact us</a></li>
+              <li><a href="{% url 'jobs-kannada' %}">Jobs</a></li>
+              <!-- <li><a href="./aims.html">AIMS</a></li> -->
+            </ul>
+          </nav>
+          <!-- mobile menu navigation end -->
+        </div>
+        <!-- mobile menu end -->
+
+        <!-- offcanvas widget area start -->
+        <div class="offcanvas-widget-area">
+          <div class="off-canvas-contact-widget">
+            <ul>
+              <li>
+                <i class="fa fa-mobile"></i>
+                <a href="#">0123456789</a>
+              </li>
+              <li>
+                <i class="fa fa-envelope-o"></i>
+                <a href="#">info@yourdomain.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="off-canvas-social-widget">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+          </div>
+        </div>
+        <!-- offcanvas widget area end -->
+      </div>
+    </div>
+  </aside>
+  <!-- off-canvas menu end -->
+
+  <div class="faq">
+    <div class="heading">
+      <h1>FAQ</h1>
+    </div>
+    <hr>
+    <div class="information1">
+      <h4>What is IIIT Dharwad?</h4>
+      <p>IIIT Dharwad is an Institute of National Importance by an act of Parliament (No. 23 of 2017) set up in PPP mode between MHRD, Government of India, Government of Karnataka, and KEONICS.The Institute’s Chairperson, Board, and Senate constitute highly eminent leaders from administration, academia, and industry. They are instrumental in steering the institute in the right direction.</p>
+    </div>
+    <div class="information1">
+      <h4>Why IIIT Dharwad?</h4>
+      <p>Three short answers: Faculty, Innovation and Location!</p>
+    </div>
+    <div class="information1">
+      <h4>Faculty</h4>
+      <p>Faculty at IIIT Dharwad are highly qualified with PhDs and Postdocs from institutes of repute in India and abroad and have the right blend of teaching, research, and industrial experience. The Director has ample experience in both academia and industry in India as well as USA. With energy and intent, they are working to set high standards in both teaching/learning and R&D.</p>
+    </div>
+    <div class="information1">
+      <h4>Innovation</h4>
+      <p>IIIT Dharwad aims to innovate in all its aspects: teaching, curriculum, campus design and R&D. The idea is to ensure that there is nothing boring or ordinary about IIIT Dharwad!   Teaching-Learning: Being a technical institute of national importance, a special emphasis is given to practice-based teaching and learning process.   Curriculum Design: The curriculum at IIIT Dharwad is evolving and dynamic to ensure that the courses taught are current and relevant.   Campus Design: The Master Plan for IIIT Dharwad ensures that the Institute will have a unique, modern, green, and smart IT campus. About 70% of the area will be left for greenery even after all the buildings are constructed at the end of four phases. Needless to say that the campus will feature Wi-Fi, outdoor sports facilities, fully equipped academic and research laboratories, and modern IT-enabled classrooms.   R&D: The hallmark of a good institute is its strength in research. Aptly IIIT Dharwad is being nurtured as a research institute to have close collaborations with IT industry and other R&D institutes.</p>
+    </div>
+    <div class="information1">
+      <h4>Location, Location, Location!</h4>
+      <p>The permanent campus of IIIT Dharwad is coming up in a 60-acre plot between the two cities of Hubballi and Dharwad. It is close to both cities and also the Hubballi Airport (UBX) yet away from all the traffic, noise and pollution. The location is indeed pristine, right where the hills start on the way to Western Ghats. It is also the catchment area of river Shalmala that flows down to join Arabian Sea near Karwar. The transit campus is located at IT Park in Hubballi near the famous Rani Chennamma circle.   Dharwad is a well-known center for higher learning including music and arts. Hubballi-Dharwad are having a significant concentration of Higher Educational institutions and universities of repute including Indian Institute of Technology-Dharwad (IIT-Dharwad), Karnataka University, University of Agricultural Sciences Dharwad (UAS-Dharwad), Karnataka State Law University, KLE Technological University, Karnataka Institute of Medical Sciences and Hospital (KIMS-Hubballi), SDM College of Medical Sciences and Hospital, and SDM College of Engineering and Technology.   Hubballi-Dharwad are twin cities, now being developed as smart cities in the state of Karnataka and together form the 2nd largest urban city next to Bangalore. The cities are located 410 kms from Bangalore city with excellent connectivity by air, rail and road to Bangalore, thereby enabling IIIT Dharwad to reap rich dividends from the strengths of Bangalore as the nation’s IT hub.   There are several significant historical places located nearby viz., Badami, Aihole, Pattadkal, Hampi, Kudalasangama, and Vijayapura. Also, the cities are very close to Western Ghats, declared as UNESCO World Heritage Site and are one of the eight “hottest hot-spots” of rich biological diversity, flora, and fauna in the world. Dharwad city is 160 kms away from Panjim city, Goa which is a popular tourist destination.</p>
+    </div>
+    <div class="information1">
+      <h4>Status of Permanent Campus:</h4>
+      <p>The permanent campus of IIIT Dharwad is currently under construction with an expected completion date of July 2020. Until then, the institute is operating in a temporary facility at I.T. Park, Hubballi with adequate classroom and laboratory spaces. Currently, hostels are located in multiple private buildings away from I.T. Park in nearby areas of Hubli city. Also, no outdoor sports facilities are available at this time.</p>
+    </div>
+    <div class="information1">
+      <h4>Any Queries ???</h4>
+      <p>Dear prospective students, you can directly ask our faculty incharge askfaculty@iiitdwd.ac.in !!!</p>
+    </div>
+  </div>
+  <!--------------footer-------------->
+
+  <footer class="footer-section">
+    <div class="container">
+      <div class="footer-cta pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-3 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="fa fa-map-marker" id="icons"></i>
+              <div class="cta-text">
+                <h4>Find us</h4>
+                <span>3rd floor IT Park,<br />
+                  Opp: Glass House, <br />
+                  Hubballi- 580029.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="fa fa-phone" id="icons"></i>
+              <div class="cta-text">
+                <h4>Call us</h4>
+                <span>1234567890</span>
+              </div>
+            </div>
+          </div>
+          <div class="weather col-xl-3 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="fa fa-cloud" id="icons"></i>
+              <div class="weather cta-text">
+                <h4>{{temp_cel}}°C/ {{temp_fah}}°F</h4>
+                <span>Dharwad</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 mb-30">
+            <div class="single-cta">
+              <i class="fa fa-envelope-open" id="icons"></i>
+              <div class="cta-text">
+                <h4>Mail us</h4>
+                <span>contact@iiitdwd.ac.in</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-content pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 mb-50">
+            <div class="footer-widget">
+              <div class="footer-logo">
+                <a href="{% url 'home' %}"><img src="{% static 'iiitdsite/images/IIIT_Dharwad Main Logo.png' %}"
+                    class="img-fluid" alt="logo" /></a>
+              </div>
+              <div class="footer-text">
+                <!-- <p>
+                  Lorem ipsum dolor sit amet, consec tetur adipisicing elit,
+                  sed do eiusmod tempor incididuntut consec tetur adipisicing
+                  elit,Lorem ipsum dolor sit amet.
+                </p> -->
+              </div>
+              <div class="footer-social-icon">
+                <span>Follow us</span>
+                <a href="#"><i class="fa fa-facebook-f facebook-bg"></i></a>
+                <a href="#"><i class="fa fa-twitter twitter-bg"></i></a>
+                <a href="#"><i class="fa fa-google-plus google-bg"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Clubs</h3>
+              </div>
+              <ul>
+                <li><a href="#">E-Cell</a></li>
+                <li><a href="#">Robotics</a></li>
+                <li><a href="#">return_0</a></li>
+                <li><a href="#">Synapse</a></li>
+              </ul>
+              <div class="footer-widget-heading">
+                <div class="footer-widget-heading">
+                  <h3>Useful Links</h3>
+                </div>
+                <ul>
+                  <li><a href="{% url 'placements-kannada' %}">Placement Cell</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Other Clubs</h3>
+              </div>
+              <ul>
+                <li>Cultural Committe</li>
+                <li>Music Club</li>
+                <li>Literature Club</li>
+                <li>Photography Club</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 mb-50">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Subscribe</h3>
+              </div>
+              <div class="footer-text mb-25">
+                <p>
+                  Don’t miss the IIIT Dharwad news letter, kindly fill the form
+                  below to get updated.
+                </p>
+              </div>
+              <div class="subscribe-form">
+                <form action="#">
+                  <input type="text" placeholder="Email Address" id="email" />
+                  <button><i class="fa fa-paper-plane"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+            <div class="copyright-text">
+              <p>
+                Copyright &copy; 2020, All Right Reserved
+                <a href="#">IIIT Dharwad</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+            <div class="footer-menu">
+              <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Tenders</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-------------footer ends---------->
+  <!-- Nav bar js -->
+  <script>
+    //smooth scroll js
+
+    var scroll = new SmoothScroll('a[href*="#"]');
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 9000,
+      speedAsDuration: true,
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+  <script>
+    (function ($) {
+      "use strict";
+
+      // Off Canvas Open close start
+      $(".off-canvas-btn").on("click", function () {
+        $("body").addClass("fix");
+        $(".off-canvas-wrapper").addClass("open");
+      });
+
+      $(".btn-close-off-canvas,.off-canvas-overlay").on("click", function () {
+        $("body").removeClass("fix");
+        $(".off-canvas-wrapper").removeClass("open");
+      });
+
+      // slide effect dropdown
+      function dropdownAnimation() {
+        $(".dropdown").on("show.bs.dropdown", function (e) {
+          $(this)
+            .find(".dropdown-menu")
+            .first()
+            .stop(true, true)
+            .slideDown(500);
+        });
+
+        $(".dropdown").on("hide.bs.dropdown", function (e) {
+          $(this)
+            .find(".dropdown-menu")
+            .first()
+            .stop(true, true)
+            .slideUp(500);
+        });
+      }
+      dropdownAnimation();
+
+      //offcanvas mobile menu start
+      var $offCanvasNav = $(".mobile-menu"),
+        $offCanvasNavSubMenu = $offCanvasNav.find(".dropdown");
+
+      /Add Toggle Button With Off Canvas Sub Menu/;
+      $offCanvasNavSubMenu
+        .parent()
+        .prepend('<span class="menu-expand"><i></i></span>');
+
+      /Close Off Canvas Sub Menu/;
+      $offCanvasNavSubMenu.slideUp();
+
+      /Category Sub Menu Toggle/;
+      $offCanvasNav.on("click", "li a, li .menu-expand", function (e) {
+        var $this = $(this);
+        if (
+          $this
+            .parent()
+            .attr("class")
+            .match(
+              /\b(menu-item-has-children|has-children|has-sub-menu)\b/
+            ) &&
+          ($this.attr("href") === "#" || $this.hasClass("menu-expand"))
+        ) {
+          e.preventDefault();
+          if ($this.siblings("ul:visible").length) {
+            $this.parent("li").removeClass("active");
+            $this.siblings("ul").slideUp();
+          } else {
+            $this.parent("li").addClass("active");
+            $this
+              .closest("li")
+              .siblings("li")
+              .removeClass("active")
+              .find("li")
+              .removeClass("active");
+            $this.closest("li").siblings("li").find("ul:visible").slideUp();
+            $this.siblings("ul").slideDown();
+          }
+        }
+      });
+
+      // tooltip active js
+      $('[data-toggle="tooltip"]').tooltip();
+    })(jQuery);
+  </script>
+  <!--ion icon cdn-->
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  <!-- Nav bar js end-->
+
+  <!-- Search box in top nav -->
+  <script>
+    //search box js
+
+    $(document).ready(function () {
+      $(".search1").each(function () {
+        var self = $(this);
+        var div = self.children("div");
+        var placeholder = div.children("input").attr("placeholder");
+        var placeholderArr = placeholder.split(/ +/);
+        if (placeholderArr.length) {
+          var spans = $("<div />");
+          $.each(placeholderArr, function (index, value) {
+            spans.append($("<span />").html(value + "&nbsp;"));
+          });
+          div.append(spans);
+        }
+        self.click(function () {
+          self.addClass("open");
+          setTimeout(function () {
+            self.find("input").focus();
+          }, 750);
+        });
+        $(document).click(function (e) {
+          if (!$(e.target).is(self) && !jQuery.contains(self[0], e.target)) {
+            self.removeClass("open");
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

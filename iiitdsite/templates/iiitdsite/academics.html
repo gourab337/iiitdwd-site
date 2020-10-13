@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <title>Academics</title>
+    <!-- Required meta tags -->
+    <!-- Font styles -->
+    <!-- Roboto Slab -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Avro -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Noto Serif -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="img/png"
+      sizes="55x55"
+      href="{% static 'iiitdsite/images/iiit-logo-small.png' %}"
+    />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{% static 'iiitdsite/css/academics.css' %}" />
+    <link rel="stylesheet" href="{% static 'iiitdsite/css/footer.css' %}" />
+    <link rel="stylesheet" href="{% static 'iiitdsite/css/favicon_nav.css' %}" />
+    <link rel="stylesheet" href="{% static 'iiitdsite/css/top_nav-scroll.css' %}" />
+  </head>
+  <body>
+    <!-- Top Nav -->
+    <nav
+      class="navbar navbar-expand-sm bg-dark justify-content-center"
+      id="backtonav"
+    >
+      <ul class="navbar-nav">
+        <div class="container">
+          <div class="row">
+            <section class="comsearch" style="margin-left: -3%">
+              <a href="#"
+                ><span style="font-size: 17px; color: #ffffff"
+                  >PMRF&nbsp;|&nbsp;
+                </span></a
+              >
+              <a href="#"
+                ><span style="font-size: 17px; color: white"
+                  >ARIIA&nbsp;|&nbsp;
+                </span></a
+              >
+              <a href="#"
+                ><span style="font-size: 17px; color: white"
+                  >RTI&nbsp;|&nbsp;
+                </span></a
+              >
+              <a href="#"
+                ><span style="font-size: 17px; color: white"
+                  >IIIT PPP Act&nbsp;|&nbsp;
+                </span></a
+              >
+              <a href="#"
+                ><span style="font-size: 17px; color: white"
+                  >AIMS&nbsp;|&nbsp;
+                </span></a
+              >
+              <a href="#"
+                ><span style="font-size: 17px; color: white"
+                  >Webmail&nbsp;|&nbsp;
+                </span></a
+              >
+              <a href="#"
+                ><span style="font-size: 17px; color: white">ICC</span></a
+              >
+            </section>
+
+            <section
+              class="information-wrapper"
+              id="navScrollBlock"
+              style="margin-top: 21px"
+            >
+              <div class="information d-none d-xl-block">
+                <div>
+                  <span><a href="{% url 'home' %}" style="color:rgb(255, 205, 131)">English
+                    </a></span>
+                </div>
+                <div>
+                  <span><a href="{% url 'kannada' %}" style="color:rgb(255, 205, 131)">ಕೆನಡಾ
+                  </a></span>
+                </div>
+                <div>
+                  <span><a href="{% url 'hindi' %}" style="color:rgb(255, 205, 131)">हिन्दी
+                  </a></span>
+                </div>
+              </div>
+            </section>
+
+            <div>
+              <div class="search" style="margin-left: -4%; margin-top: 10px">
+                <script
+                  async
+                  src="https://cse.google.com/cse.js?cx=483075f18c137fb12"
+                ></script>
+                <div class="gcse-search"></div>
+              </div>
+            </div>
+          </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </nav>
+    <!-- End Top Nav -->
+
+    <!-- Start Header Area -->
+    <header class="header-area">
+      <!-- main header start -->
+
+      <div class="main-header d-none d-lg-block">
+        <!-- header middle area start -->
+        <div class="header-main-area sticky">
+          <div class="container-fluid">
+            <div class="row align-items-center position-relative">
+              <!-- start logo area -->
+              <div class="col-lg-2">
+                <div class="logo">
+                  <a href="{% url 'home' %}">
+                    <img
+                      src="{% static 'iiitdsite/images/IIIT_Dharwad Main Logo.png' %}"
+                      alt="IIIT Dharwad"
+                    />
+                  </a>
+                </div>
+              </div>
+              <!-- start logo area -->
+
+              <!-- main menu area start -->
+              <div class="col-lg-10 position-static">
+                <div class="main-menu-area">
+                  <div class="main-menu">
+                    <!-- main menu navbar start -->
+                    <nav class="desktop-menu">
+                      <ul>
+                        <li class="static">
+                          <a href="{% url 'home' %}">Home </a>
+                        </li>
+                        <li class="static">
+                          <a href="{% url 'about' %}">About</a>
+                        </li>
+                        <li class="static">
+                          <a href="{% url 'academics' %}"
+                            >Academics <i class="fa fa-angle-down"></i
+                          ></a>
+                          <ul class="megamenu dropdown">
+                            <li
+                              class="mega-title"
+                              style="padding-left: 0px; margin-left: 0px;"
+                            >
+                              <a href="#">Courses</a>
+                              <ul>
+                                <li>
+                                  <a href="{% url 'academics-cse' %}">
+                                    Computer Science & Engineering (CSE)</a
+                                  >
+                                </li>
+                                <li>
+                                  <a href="{% url 'academics-ece' %}">
+                                    Electronics & Communication Engineering
+                                    (ECE)</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="mega-title">
+                              <a href="">Academic Information</a>
+                              <ul>
+                                <li><a href={{acad_link.acad_link}}>Academic Calendar</a></li>
+                                <li>
+                                  <a href="{% url 'faculty' %}">Faculty</a>
+                                </li>
+                                <li>
+                                  <a href="{% url 'research' %}">Research</a>
+                                </li>
+                              </ul>
+                            </li>
+
+                            <li class="mega-title">
+                              <img
+                                src="https://img.collegedekhocdn.com/media/img/institute/crawled_images/None/GDHGHGDDF.jpeg?tr=w-250,h-150"
+                                alt=""
+                              />
+                            </li>
+
+                            <li class="mega-title">
+                              <a href="#">Curriculum</a>
+                              <ul>
+                                <li>
+                                  <a href={{currilink.cse_link}}
+                                    >Computer Science & Engineering (CSE)</a
+                                  >
+                                </li>
+                                <li>
+                                  <a href={{currilink.ece_link}}
+                                    >Electronics & Communication Engineering
+                                    (ECE)</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="{% url 'admissions' %}"
+>Admissions <i class="fa fa-angle-down"></i
+                          ></a>
+                          <ul class="dropdown">
+                            <li>
+                              <a href="{% url 'ug' %}">
+                                Undergraduate (Ug)<i
+                                  class="fa fa-angle-right"
+                                ></i
+                              ></a>
+                              <ul class="dropdown">
+                                <li><a href={{links.fee_structure}}>Fee Structure</a></li>
+                                <li><a href={{links.admission_checklist}}> Admission Checklist</a></li>
+                                <li><a href={{links.course_seat_matrix}}> Course Seat Matrix</a></li>
+                                <li><a href={{links.academic_regulations}}> Academic Regulations</a></li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="{% url 'phd' %}"> Ph.D Programme </a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                >Financial Aid <i class="fa fa-angle-right"></i
+                              ></a>
+                              <ul class="dropdown">
+                                <li>
+                                  <a  href="{% url 'scholarships' %}">Scholarships & Bank Loans</a>
+                                </li>
+                                <li>
+                                  <a href={{links.sbi_collect}}>SBI Collect </a></li>
+                                  <li><a href={{links.instructions_for_sbi_collect}}>Instructions for SBI Collect</a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="#">
+                                Quick Links<i class="fa fa-angle-right"></i
+                              ></a>
+                              <ul class="dropdown">
+                                <li><a href={{links.jossa_link}}>JOSAA</a></li>
+                                <li><a href={{links.csab_link}}>CSAB</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li><a href="{% url 'events' %}">Events</a></li>
+                        <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                        <li><a href="{% url 'newstack' %}">News</a></li>
+                        <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                        <li><a href="{% url 'jobs' %}">Jobs</a></li>
+                        <!-- <li>
+                          <a href="#">AIMS <i class="fa fa-user"></i></a>
+                        </li> -->
+                      </ul>
+                    </nav>
+                    <!-- main menu navbar end -->
+                  </div>
+                </div>
+              </div>
+              <!-- main menu area end -->
+
+              <!-- mini cart area start -->
+              <!-- <div class="col-lg-2"></div> -->
+              <!-- mini cart area end -->
+            </div>
+          </div>
+        </div>
+        <!-- header middle area end -->
+      </div>
+      <!-- main header start -->
+
+      <!-- mobile header start -->
+      <div class="mobile-header d-lg-none d-md-block sticky">
+        <!--mobile header top start -->
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <div class="mobile-main-header">
+                <div class="mobile-logo">
+                  <a href="{% url 'home' %}">
+                    <img
+                      src="{% static 'iiitdsite/images/IIIT_Dharwad Main Logo.png' %}"
+                      alt="IIIT Dharwad"
+                    />
+                    <!--mobile menu logo-->
+                  </a>
+                </div>
+                <div class="mobile-menu-toggler">
+                  <div class="mobile-menu-btn">
+                    <div class="off-canvas-btn">
+                      <ion-icon name="grid"></ion-icon>
+                      <!--menu icon for mobile menu-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- mobile header top start -->
+      </div>
+      <!-- mobile header end -->
+    </header>
+    <!-- end Header Area -->
+
+    <!-- off-canvas menu start -->
+    <aside class="off-canvas-wrapper">
+      <div class="off-canvas-overlay"></div>
+      <div class="off-canvas-inner-content">
+        <div class="btn-close-off-canvas">
+          <i class="fa fa-times"></i>
+        </div>
+
+        <div class="off-canvas-inner">
+          <!-- search box start -->
+          <div class="search-mobile">
+            <script async src="https://cse.google.com/cse.js?cx=483075f18c137fb12"></script>
+<div class="gcse-search"></div>
+          </div>
+          <!-- search box end -->
+
+          <!-- mobile menu start -->
+          <div class="mobile-navigation">
+            <!-- mobile menu navigation start -->
+            <nav>
+              <ul
+                class="mobile-menu"
+                style="padding-bottom: 0px; margin-bottom: 0px;"
+              >
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li class="menu-item-has-children">
+                  <a href="{% url 'academics' %}">Academics</a>
+                  <ul class="dropdown">
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="{% url 'faculty' %}">Faculty</a></li>
+                    <li><a href="{% url 'research' %}">Research</a></li>
+                    <li class="menu-item-has-children"><a href="">Curriculum</a>
+                    <ul class="dropdown">
+                      <li><a href="{{currilink.cse_link}}">CSE</a></li>
+                      <li><a href={{currilink.cse_link}}>ECE</a></li>
+                  </ul>
+                </li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="{% url 'admissions' %}">Admissions</a>
+                  <ul class="dropdown">
+                    <li><a href="{% url 'ug' %}">Undergraduate</a></li>
+                    <li><a href="{% url 'phd' %}">Ph.D</a></li>
+                    <li><a href="#">Finance+Aid</a></li>
+                  </ul>
+                </li>
+                <li><a href="{% url 'events' %}">Events</a></li>
+                <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                <li><a href="{% url 'newstack' %}">News</a></li>
+                <li><a href="{% url 'contact' %}">Contact us</a></li>
+                <li><a href="{% url 'jobs' %}">Jobs</a></li>
+                <!-- <li><a href="./aims.html">AIMS</a></li> -->
+              </ul>
+            </nav>
+            <!-- mobile menu navigation end -->
+          </div>
+          <!-- mobile menu end -->
+
+          <!-- offcanvas widget area start -->
+          <div class="offcanvas-widget-area">
+            <div class="off-canvas-contact-widget">
+              <ul>
+                <li>
+                  <i class="fa fa-mobile"></i>
+                  <a href="#">0123456789</a>
+                </li>
+                <li>
+                  <i class="fa fa-envelope-o"></i>
+                  <a href="#">info@yourdomain.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="off-canvas-social-widget">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-google"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+              <a href="#"><i class="fa fa-youtube-play"></i></a>
+            </div>
+          </div>
+          <!-- offcanvas widget area end -->
+        </div>
+      </div>
+    </aside>
+    <!-- off-canvas menu end -->
+
+    <!-- Academics Home Page -->
+
+    {% for academics in academics %}
+    <section class="Home-Page">
+      <div class="heading">
+        <h1>Departments</h1>
+      </div>
+      <div class="sub-heading">
+        <a class="link1">Computer Science and Engineering</a>
+        <a class="link2">Elecronics and Communication Engineering</a>
+      </div>
+      <div class="images">
+        <a href="{% url 'academics-cse' %}" class="one"><img src="{{academics.cse_image_link}}" /></a>
+
+        <div class="e">
+          <br />
+          <br />
+          <br />
+          <h6 class="extra">Electronics and Communication Engineering</h6>
+          <br />
+        </div>
+
+        <a href="{% url 'academics-ece' %}" class="two"><img src="{{academics.ece_image_link}}" /></a>
+      </div>
+
+      <div class="second-heading">
+        <h1>Academic Information</h1>
+      </div>
+      <div class="redirect">
+        <a href={{academics.academic_calendar_link}} class="l1">Academic Calender</a>
+        <a href="{% url 'faculty' %}" class="l2">Faculty</a>
+        <a href="{% url 'research" class="l3">Research</a>
+      </div>
+
+      <div class="extra2">
+        <a href={{academics.academic_calendar_link}} class="a1">Academic Calender</a>
+        <br />
+        <br />
+        <br />
+        <a href="{% url 'faculty' %}" class="a2">Faculty</a>
+        <br />
+        <br />
+        <br />
+        <a href="{% url 'research' %}" class="a3">Research</a>
+      </div>
+    </section>
+    {% endfor %}
+
+    <!--------------footer-------------->
+
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-3 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fa fa-map-marker" id="icons"></i>
+                <div class="cta-text">
+                  <h4>Find us</h4>
+                  <span
+                    >3rd floor IT Park,<br />
+                    Opp: Glass House, <br />
+                    Hubballi- 580029.</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fa fa-phone" id="icons"></i>
+                <div class="cta-text">
+                  <h4>Call us</h4>
+                  <span>1234567890</span>
+                </div>
+              </div>
+            </div>
+            <div class="weather col-xl-3 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fa fa-cloud" id="icons"></i>
+                <div class="weather cta-text">
+                  <h4>{{temp_cel}}°C/ {{temp_fah}}°F</h4>
+                  <span>Dharwad</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 mb-30">
+              <div class="single-cta">
+                <i class="fa fa-envelope-open" id="icons"></i>
+                <div class="cta-text">
+                  <h4>Mail us</h4>
+                  <span>contact@iiitdwd.ac.in</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-3 col-lg-3 mb-50">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a href="{% url 'home' %}"
+                    ><img
+                      src="{% static 'iiitdsite/images/IIIT_Dharwad Main Logo.png' %}"
+                      class="img-fluid"
+                      alt="logo"
+                  /></a>
+                </div>
+                <div class="footer-text">
+<!--                  <p>-->
+<!--                    Lorem ipsum dolor sit amet, consec tetur adipisicing elit,-->
+<!--                    sed do eiusmod tempor incididuntut consec tetur adipisicing-->
+<!--                    elit,Lorem ipsum dolor sit amet.-->
+<!--                  </p>-->
+                </div>
+                <div class="footer-social-icon">
+                  <span>Follow us</span>
+                  <a href="#"><i class="fa fa-facebook-f facebook-bg"></i></a>
+                  <a href="#"><i class="fa fa-twitter twitter-bg"></i></a>
+                  <a href="#"><i class="fa fa-google-plus google-bg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Clubs</h3>
+                </div>
+                <ul>
+                  <li><a href="#">E-Cell</a></li>
+                  <li><a href="#">Robotics</a></li>
+                  <li><a href="#">return_0</a></li>
+                  <li><a href="#">Synapse</a></li>
+                </ul>
+                <div class="footer-widget-heading">
+                  <div class="footer-widget-heading">
+                    <h3>Useful Links</h3>
+                  </div>
+                  <ul>
+                    <li><a href="{% url 'placements' %}">Placement Cell</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Other Clubs</h3>
+              </div>
+              <ul>
+                <li>Cultural Committe</li>
+                <li>Music Club</li>
+                <li>Literature Club</li>
+                <li>Photography Club</li>
+              </ul>
+            </div>
+          </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 mb-50">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Subscribe</h3>
+                </div>
+                <div class="footer-text mb-25">
+                  <p>
+                    Don’t miss the IIIT Dharwad news letter, kindly fill the form
+                    below to get updated.
+                  </p>
+                </div>
+                <div class="subscribe-form">
+                  <form action="#">
+                    <input type="text" placeholder="Email Address" id="email"/>
+                    <button><i class="fa fa-paper-plane"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+              <div class="copyright-text">
+                <p>
+                  Copyright &copy; 2020, All Right Reserved
+                  <a href="#">IIIT Dharwad</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+              <div class="footer-menu">
+                <ul>
+                  <li><a href="{% url 'home' %}">Home</a></li>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Tenders</a></li>
+                  <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-------------footer ends---------->
+    <!-- Nav bar js -->
+    <script>
+      //smooth scroll js
+
+      var scroll = new SmoothScroll('a[href*="#"]');
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 9000,
+        speedAsDuration: true,
+      });
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script>
+      (function ($) {
+        "use strict";
+
+        // Off Canvas Open close start
+        $(".off-canvas-btn").on("click", function () {
+          $("body").addClass("fix");
+          $(".off-canvas-wrapper").addClass("open");
+        });
+
+        $(".btn-close-off-canvas,.off-canvas-overlay").on("click", function () {
+          $("body").removeClass("fix");
+          $(".off-canvas-wrapper").removeClass("open");
+        });
+
+        // slide effect dropdown
+        function dropdownAnimation() {
+          $(".dropdown").on("show.bs.dropdown", function (e) {
+            $(this)
+              .find(".dropdown-menu")
+              .first()
+              .stop(true, true)
+              .slideDown(500);
+          });
+
+          $(".dropdown").on("hide.bs.dropdown", function (e) {
+            $(this)
+              .find(".dropdown-menu")
+              .first()
+              .stop(true, true)
+              .slideUp(500);
+          });
+        }
+        dropdownAnimation();
+
+        //offcanvas mobile menu start
+        var $offCanvasNav = $(".mobile-menu"),
+          $offCanvasNavSubMenu = $offCanvasNav.find(".dropdown");
+
+        /Add Toggle Button With Off Canvas Sub Menu/;
+        $offCanvasNavSubMenu
+          .parent()
+          .prepend('<span class="menu-expand"><i></i></span>');
+
+        /Close Off Canvas Sub Menu/;
+        $offCanvasNavSubMenu.slideUp();
+
+        /Category Sub Menu Toggle/;
+        $offCanvasNav.on("click", "li a, li .menu-expand", function (e) {
+          var $this = $(this);
+          if (
+            $this
+              .parent()
+              .attr("class")
+              .match(
+                /\b(menu-item-has-children|has-children|has-sub-menu)\b/
+              ) &&
+            ($this.attr("href") === "#" || $this.hasClass("menu-expand"))
+          ) {
+            e.preventDefault();
+            if ($this.siblings("ul:visible").length) {
+              $this.parent("li").removeClass("active");
+              $this.siblings("ul").slideUp();
+            } else {
+              $this.parent("li").addClass("active");
+              $this
+                .closest("li")
+                .siblings("li")
+                .removeClass("active")
+                .find("li")
+                .removeClass("active");
+              $this.closest("li").siblings("li").find("ul:visible").slideUp();
+              $this.siblings("ul").slideDown();
+            }
+          }
+        });
+
+        // tooltip active js
+        $('[data-toggle="tooltip"]').tooltip();
+      })(jQuery);
+    </script>
+    <!--ion icon cdn-->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <!-- Nav bar js end-->
+
+    <!-- Search box in top nav -->
+    <script>
+      //search box js
+
+      $(document).ready(function () {
+        $(".search1").each(function () {
+          var self = $(this);
+          var div = self.children("div");
+          var placeholder = div.children("input").attr("placeholder");
+          var placeholderArr = placeholder.split(/ +/);
+          if (placeholderArr.length) {
+            var spans = $("<div />");
+            $.each(placeholderArr, function (index, value) {
+              spans.append($("<span />").html(value + "&nbsp;"));
+            });
+            div.append(spans);
+          }
+          self.click(function () {
+            self.addClass("open");
+            setTimeout(function () {
+              self.find("input").focus();
+            }, 750);
+          });
+          $(document).click(function (e) {
+            if (!$(e.target).is(self) && !jQuery.contains(self[0], e.target)) {
+              self.removeClass("open");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

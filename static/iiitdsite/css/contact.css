@@ -1,0 +1,74 @@
+body {
+  /* padding: 3% 7%; */
+  text-align: left;
+  color: #7d8ee4;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/*Heading*/
+.heading {
+  text-align: center;
+  padding-bottom: 5%;
+}
+/*Form*/
+.your-info {
+  font-size: 1rem;
+  line-height: 2.5;
+}
+/*Contact Details*/
+.symbols {
+  font-size: 2rem;
+  margin: 15px;
+}
+.sml-headings {
+  position: relative;
+  /* left: 60px; */
+  bottom: 50px;
+}
+.p-info {
+  position: relative;
+  /* left: 60px; */
+  bottom: 49px;
+  color: black;
+}
+/*Map*/
+.map {
+  text-align: center;
+  width: 900px;
+  height: 600px;
+  margin-top: 50px;
+}
+.map-div {
+  text-align: center;
+}
+/* Media query */
+@media (max-width: 1000px) {
+  /* .heading {
+    padding-top: 150px;
+  } */
+  .our-info {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .map {
+    padding-top: 0px;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  /* height: 100%; */
+  overflow-x: hidden;
+}
+
+body {
+  /* height: 2000px; */
+  /* background: black; */
+  margin: 0;
+  /* height: 100%; */
+  overflow-x: hidden;
+}

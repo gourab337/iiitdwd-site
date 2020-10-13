@@ -1,0 +1,243 @@
+#background::before {
+  content: "";
+  position: relative;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+  /* z-index: -1; */
+  filter: brightness(60%);
+}
+
+/* #img-text {
+  padding-top: 50px;
+} */
+
+.h1 {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 240px; */
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 51px;
+  z-index: 4;
+  word-spacing: 12px;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  color: white;
+  opacity: 0.8;
+}
+
+.pre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  font-size: 35px;
+  color: white;
+  opacity: 0.85;
+  word-spacing: 3px;
+  
+}
+
+.ab {
+  text-decoration: none;
+  border: 4px solid white;
+  /* margin-right: 30px; */
+  font-size: 30px;
+  /* padding: 0px; */
+  color: white;
+  /* padding-top: 10px; */
+  background-color: red;
+  /* width: 100px; */
+  /* padding-bottom: 10px; */
+  /* padding-left: 45px;
+  padding-right: 45px; */
+}
+
+.ab:hover {
+  background-color: blue;
+  opacity: 0.9;
+}
+.row{
+  font-family: 'Arvo', serif;
+}
+.pre{
+  font-family: 'Poppins', sans-serif;
+}
+
+.option {
+  text-decoration: none;
+  /* font-size: 50px; */
+  /* margin-top: 60px; */
+  margin: 0px auto;
+  /* text-align: center; */
+  /* padding-top: 50px; */
+  /* width: 100px; */
+}
+.head{
+   font-family: 'Noto Serif', serif;
+}
+.h-secondary{
+  font-family: 'Roboto Slab', serif;
+}
+
+@media screen and (max-width: 640px) {
+  .h1 {
+    font-size: 36px;
+  }
+  .background::before {
+    content: "";
+    position: fixed;
+    background: url(./images/up-2.jpg) no-repeat center center/cover;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    filter: brightness(30%);
+    color: black;
+  }
+  .pre {
+    font-size: 12px;
+    word-spacing: normal;
+  }
+  .ab {
+    font-size: 18px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-left: -220px;
+    margin-right: -100px;
+  }
+  .option {
+    margin-top: 24px;
+  }
+  .line {
+    display: none;
+  }
+  .line1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: -21px;
+    opacity: 0.6;
+  }
+
+  .head {
+    padding-top: 15px;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    font-family: 'Noto Serif', serif;
+  }
+  .description {
+    font-size: 13px;
+    width: fit-content;
+    height: fit-content;
+  }
+  /* #service {
+    flex-direction: column;
+  } */
+  .h-secondary {
+    font-size: 30px;
+  }
+  .box {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 15px;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .line1 {
+    opacity: 0;
+  }
+}
+p{
+  font-family: 'Noto Serif', serif;
+}
+
+/* Page-2 */
+.para {
+  color: cornsilk;
+  font-family: 'Noto Serif', serif;
+}
+
+.back {
+  background-color: #ebebe0;
+  z-index: -3;
+  /* margin-top: 180px; */
+  opacity: 0.8;
+}
+
+#service {
+  /* margin: 34px;
+  margin-left: 200px;
+  margin-top: 30px; */
+  margin: 0 auto;
+  display: flex;
+  z-index: -2;
+}
+.box {
+  border: 0px solid;
+  padding: 34px;
+  /* margin: 10px; */
+  z-index: -3;
+  background-color: #001133;
+  width: fit-content;
+  text-align: center;
+  z-index: 1;
+  margin: 0 auto;
+  display: table-cell;
+}
+.h-secondary {
+  font-size: 36px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 3;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* padding: 20px; */
+  border: 0px solid #001133;
+  background-color: #001133;
+  /* margin-bottom: 20px; */
+}
+.description {
+  font-size: 16px;
+  width: fit-content;
+  height: max-content;
+  color: white;
+}
+.head {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: centers;
+  padding-top: 15px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 512px) {
+  .head {
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 2px;
+  }
+}
